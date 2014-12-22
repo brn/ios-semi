@@ -23,17 +23,33 @@
 		421531EB1A43C9D400C4297D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 421531E91A43C9D400C4297D /* InfoPlist.strings */; };
 		421531ED1A43C9D400C4297D /* PhillipsHueControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 421531EC1A43C9D400C4297D /* PhillipsHueControllerTests.m */; };
 		421531F91A43CA3300C4297D /* HueConnectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 421531F81A43CA3300C4297D /* HueConnectionService.m */; };
-		421531FB1A43CC5800C4297D /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421531FA1A43CC5800C4297D /* HueSDK_iOS.framework */; };
-		4215320C1A43CC6200C4297D /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 421531FE1A43CC6200C4297D /* DDAbstractDatabaseLogger.m */; };
-		4215320D1A43CC6200C4297D /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 421532001A43CC6200C4297D /* DDASLLogger.m */; };
-		4215320E1A43CC6200C4297D /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 421532021A43CC6200C4297D /* DDFileLogger.m */; };
-		4215320F1A43CC6200C4297D /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 421532041A43CC6200C4297D /* DDLog.m */; };
-		421532101A43CC6200C4297D /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 421532061A43CC6200C4297D /* DDTTYLogger.m */; };
-		421532111A43CC6200C4297D /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 421532091A43CC6200C4297D /* ContextFilterLogFormatter.m */; };
-		421532121A43CC6200C4297D /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4215320B1A43CC6200C4297D /* DispatchQueueLogFormatter.m */; };
-		421532151A43CCBB00C4297D /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 421532141A43CCBB00C4297D /* JSONKit.m */; };
+		421532151A43CCBB00C4297D /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 421532141A43CCBB00C4297D /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		421532181A43D2AB00C4297D /* HueNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 421532171A43D2AB00C4297D /* HueNotificationService.m */; };
 		4215321B1A43D60C00C4297D /* HueHeartbeatService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4215321A1A43D60C00C4297D /* HueHeartbeatService.m */; };
+		F21717021A485533006C9984 /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21717011A485533006C9984 /* HueSDK_iOS.framework */; };
+		F21717031A485533006C9984 /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21717011A485533006C9984 /* HueSDK_iOS.framework */; };
+		F21717071A485A88006C9984 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717051A485A88006C9984 /* LoadingViewController.m */; };
+		F21717081A485A88006C9984 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717051A485A88006C9984 /* LoadingViewController.m */; };
+		F21717091A485A88006C9984 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21717061A485A88006C9984 /* LoadingViewController.xib */; };
+		F217170A1A485A88006C9984 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21717061A485A88006C9984 /* LoadingViewController.xib */; };
+		F217171B1A485C48006C9984 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F217170D1A485C48006C9984 /* DDAbstractDatabaseLogger.m */; };
+		F217171C1A485C48006C9984 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F217170D1A485C48006C9984 /* DDAbstractDatabaseLogger.m */; };
+		F217171D1A485C48006C9984 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F217170F1A485C48006C9984 /* DDASLLogger.m */; };
+		F217171E1A485C48006C9984 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F217170F1A485C48006C9984 /* DDASLLogger.m */; };
+		F217171F1A485C48006C9984 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717111A485C48006C9984 /* DDFileLogger.m */; };
+		F21717201A485C48006C9984 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717111A485C48006C9984 /* DDFileLogger.m */; };
+		F21717211A485C48006C9984 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717131A485C48006C9984 /* DDLog.m */; };
+		F21717221A485C48006C9984 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717131A485C48006C9984 /* DDLog.m */; };
+		F21717231A485C48006C9984 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717151A485C48006C9984 /* DDTTYLogger.m */; };
+		F21717241A485C48006C9984 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717151A485C48006C9984 /* DDTTYLogger.m */; };
+		F21717251A485C48006C9984 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717181A485C48006C9984 /* ContextFilterLogFormatter.m */; };
+		F21717261A485C48006C9984 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717181A485C48006C9984 /* ContextFilterLogFormatter.m */; };
+		F21717271A485C48006C9984 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F217171A1A485C48006C9984 /* DispatchQueueLogFormatter.m */; };
+		F21717281A485C48006C9984 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F217171A1A485C48006C9984 /* DispatchQueueLogFormatter.m */; };
+		F217172D1A4866B4006C9984 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F217172B1A4866B4006C9984 /* MainViewController.m */; };
+		F217172E1A4866B4006C9984 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F217172B1A4866B4006C9984 /* MainViewController.m */; };
+		F217172F1A4866B4006C9984 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F217172C1A4866B4006C9984 /* MainViewController.xib */; };
+		F21717301A4866B4006C9984 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F217172C1A4866B4006C9984 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,27 +85,33 @@
 		421531EC1A43C9D400C4297D /* PhillipsHueControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhillipsHueControllerTests.m; sourceTree = "<group>"; };
 		421531F71A43CA3300C4297D /* HueConnectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HueConnectionService.h; sourceTree = "<group>"; };
 		421531F81A43CA3300C4297D /* HueConnectionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HueConnectionService.m; sourceTree = "<group>"; };
-		421531FA1A43CC5800C4297D /* HueSDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HueSDK_iOS.framework; path = "../../github/PhilipsHueSDK-iOS-OSX/QuickStartApp_iOS/HueSDK_iOS.framework"; sourceTree = "<group>"; };
-		421531FD1A43CC6200C4297D /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
-		421531FE1A43CC6200C4297D /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		421531FF1A43CC6200C4297D /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
-		421532001A43CC6200C4297D /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
-		421532011A43CC6200C4297D /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
-		421532021A43CC6200C4297D /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
-		421532031A43CC6200C4297D /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
-		421532041A43CC6200C4297D /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
-		421532051A43CC6200C4297D /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
-		421532061A43CC6200C4297D /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
-		421532081A43CC6200C4297D /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
-		421532091A43CC6200C4297D /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
-		4215320A1A43CC6200C4297D /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
-		4215320B1A43CC6200C4297D /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		421532131A43CCBB00C4297D /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		421532141A43CCBB00C4297D /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		421532161A43D2AB00C4297D /* HueNotificationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HueNotificationService.h; sourceTree = "<group>"; };
 		421532171A43D2AB00C4297D /* HueNotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HueNotificationService.m; sourceTree = "<group>"; };
 		421532191A43D60C00C4297D /* HueHeartbeatService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HueHeartbeatService.h; sourceTree = "<group>"; };
 		4215321A1A43D60C00C4297D /* HueHeartbeatService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HueHeartbeatService.m; sourceTree = "<group>"; };
+		F21717011A485533006C9984 /* HueSDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK_iOS.framework; sourceTree = "<group>"; };
+		F21717041A485A88006C9984 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		F21717051A485A88006C9984 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		F21717061A485A88006C9984 /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		F217170C1A485C48006C9984 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		F217170D1A485C48006C9984 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		F217170E1A485C48006C9984 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		F217170F1A485C48006C9984 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		F21717101A485C48006C9984 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		F21717111A485C48006C9984 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		F21717121A485C48006C9984 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		F21717131A485C48006C9984 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		F21717141A485C48006C9984 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		F21717151A485C48006C9984 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		F21717171A485C48006C9984 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		F21717181A485C48006C9984 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		F21717191A485C48006C9984 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		F217171A1A485C48006C9984 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		F217172A1A4866B4006C9984 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F217172B1A4866B4006C9984 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F217172C1A4866B4006C9984 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +121,7 @@
 			files = (
 				421531C11A43C9D400C4297D /* CoreGraphics.framework in Frameworks */,
 				421531C31A43C9D400C4297D /* UIKit.framework in Frameworks */,
-				421531FB1A43CC5800C4297D /* HueSDK_iOS.framework in Frameworks */,
+				F21717021A485533006C9984 /* HueSDK_iOS.framework in Frameworks */,
 				421531BF1A43C9D400C4297D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +132,7 @@
 			files = (
 				421531E11A43C9D400C4297D /* XCTest.framework in Frameworks */,
 				421531E31A43C9D400C4297D /* UIKit.framework in Frameworks */,
+				F21717031A485533006C9984 /* HueSDK_iOS.framework in Frameworks */,
 				421531E21A43C9D400C4297D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +162,8 @@
 		421531BD1A43C9D400C4297D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				421531FC1A43CC6200C4297D /* Lumberjack */,
-				421531FA1A43CC5800C4297D /* HueSDK_iOS.framework */,
+				F217170B1A485C48006C9984 /* Lumberjack */,
+				F21717011A485533006C9984 /* HueSDK_iOS.framework */,
 				421531BE1A43C9D400C4297D /* Foundation.framework */,
 				421531C01A43C9D400C4297D /* CoreGraphics.framework */,
 				421531C21A43C9D400C4297D /* UIKit.framework */,
@@ -152,6 +175,7 @@
 		421531C41A43C9D400C4297D /* PhillipsHueController */ = {
 			isa = PBXGroup;
 			children = (
+				F21717291A486681006C9984 /* ViewController */,
 				421532131A43CCBB00C4297D /* JSONKit.h */,
 				421532141A43CCBB00C4297D /* JSONKit.m */,
 				421531F61A43C9FD00C4297D /* Service */,
@@ -209,34 +233,46 @@
 			name = Service;
 			sourceTree = "<group>";
 		};
-		421531FC1A43CC6200C4297D /* Lumberjack */ = {
+		F217170B1A485C48006C9984 /* Lumberjack */ = {
 			isa = PBXGroup;
 			children = (
-				421531FD1A43CC6200C4297D /* DDAbstractDatabaseLogger.h */,
-				421531FE1A43CC6200C4297D /* DDAbstractDatabaseLogger.m */,
-				421531FF1A43CC6200C4297D /* DDASLLogger.h */,
-				421532001A43CC6200C4297D /* DDASLLogger.m */,
-				421532011A43CC6200C4297D /* DDFileLogger.h */,
-				421532021A43CC6200C4297D /* DDFileLogger.m */,
-				421532031A43CC6200C4297D /* DDLog.h */,
-				421532041A43CC6200C4297D /* DDLog.m */,
-				421532051A43CC6200C4297D /* DDTTYLogger.h */,
-				421532061A43CC6200C4297D /* DDTTYLogger.m */,
-				421532071A43CC6200C4297D /* Extensions */,
+				F217170C1A485C48006C9984 /* DDAbstractDatabaseLogger.h */,
+				F217170D1A485C48006C9984 /* DDAbstractDatabaseLogger.m */,
+				F217170E1A485C48006C9984 /* DDASLLogger.h */,
+				F217170F1A485C48006C9984 /* DDASLLogger.m */,
+				F21717101A485C48006C9984 /* DDFileLogger.h */,
+				F21717111A485C48006C9984 /* DDFileLogger.m */,
+				F21717121A485C48006C9984 /* DDLog.h */,
+				F21717131A485C48006C9984 /* DDLog.m */,
+				F21717141A485C48006C9984 /* DDTTYLogger.h */,
+				F21717151A485C48006C9984 /* DDTTYLogger.m */,
+				F21717161A485C48006C9984 /* Extensions */,
 			);
-			name = Lumberjack;
-			path = "../../github/PhilipsHueSDK-iOS-OSX/Lumberjack";
+			path = Lumberjack;
 			sourceTree = "<group>";
 		};
-		421532071A43CC6200C4297D /* Extensions */ = {
+		F21717161A485C48006C9984 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				421532081A43CC6200C4297D /* ContextFilterLogFormatter.h */,
-				421532091A43CC6200C4297D /* ContextFilterLogFormatter.m */,
-				4215320A1A43CC6200C4297D /* DispatchQueueLogFormatter.h */,
-				4215320B1A43CC6200C4297D /* DispatchQueueLogFormatter.m */,
+				F21717171A485C48006C9984 /* ContextFilterLogFormatter.h */,
+				F21717181A485C48006C9984 /* ContextFilterLogFormatter.m */,
+				F21717191A485C48006C9984 /* DispatchQueueLogFormatter.h */,
+				F217171A1A485C48006C9984 /* DispatchQueueLogFormatter.m */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F21717291A486681006C9984 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F21717041A485A88006C9984 /* LoadingViewController.h */,
+				F21717051A485A88006C9984 /* LoadingViewController.m */,
+				F21717061A485A88006C9984 /* LoadingViewController.xib */,
+				F217172A1A4866B4006C9984 /* MainViewController.h */,
+				F217172B1A4866B4006C9984 /* MainViewController.m */,
+				F217172C1A4866B4006C9984 /* MainViewController.xib */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,8 +352,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				421531D51A43C9D400C4297D /* Main_iPad.storyboard in Resources */,
+				F217172F1A4866B4006C9984 /* MainViewController.xib in Resources */,
 				421531DA1A43C9D400C4297D /* Images.xcassets in Resources */,
 				421531D21A43C9D400C4297D /* Main_iPhone.storyboard in Resources */,
+				F21717091A485A88006C9984 /* LoadingViewController.xib in Resources */,
 				421531C91A43C9D400C4297D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +365,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				421531EB1A43C9D400C4297D /* InfoPlist.strings in Resources */,
+				F21717301A4866B4006C9984 /* MainViewController.xib in Resources */,
+				F217170A1A485A88006C9984 /* LoadingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,20 +377,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21717211A485C48006C9984 /* DDLog.m in Sources */,
+				F21717251A485C48006C9984 /* ContextFilterLogFormatter.m in Sources */,
 				421531F91A43CA3300C4297D /* HueConnectionService.m in Sources */,
+				F217172D1A4866B4006C9984 /* MainViewController.m in Sources */,
+				F217171F1A485C48006C9984 /* DDFileLogger.m in Sources */,
 				421531D81A43C9D400C4297D /* ViewController.m in Sources */,
 				421532151A43CCBB00C4297D /* JSONKit.m in Sources */,
-				4215320D1A43CC6200C4297D /* DDASLLogger.m in Sources */,
-				421532111A43CC6200C4297D /* ContextFilterLogFormatter.m in Sources */,
-				421532101A43CC6200C4297D /* DDTTYLogger.m in Sources */,
-				4215320E1A43CC6200C4297D /* DDFileLogger.m in Sources */,
-				4215320F1A43CC6200C4297D /* DDLog.m in Sources */,
+				F21717071A485A88006C9984 /* LoadingViewController.m in Sources */,
+				F21717231A485C48006C9984 /* DDTTYLogger.m in Sources */,
+				F217171D1A485C48006C9984 /* DDASLLogger.m in Sources */,
 				421531CF1A43C9D400C4297D /* AppDelegate.m in Sources */,
+				F21717271A485C48006C9984 /* DispatchQueueLogFormatter.m in Sources */,
+				F217171B1A485C48006C9984 /* DDAbstractDatabaseLogger.m in Sources */,
 				4215321B1A43D60C00C4297D /* HueHeartbeatService.m in Sources */,
 				421532181A43D2AB00C4297D /* HueNotificationService.m in Sources */,
-				421532121A43CC6200C4297D /* DispatchQueueLogFormatter.m in Sources */,
 				421531CB1A43C9D400C4297D /* main.m in Sources */,
-				4215320C1A43CC6200C4297D /* DDAbstractDatabaseLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +400,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21717221A485C48006C9984 /* DDLog.m in Sources */,
+				F217171E1A485C48006C9984 /* DDASLLogger.m in Sources */,
 				421531ED1A43C9D400C4297D /* PhillipsHueControllerTests.m in Sources */,
+				F217172E1A4866B4006C9984 /* MainViewController.m in Sources */,
+				F21717081A485A88006C9984 /* LoadingViewController.m in Sources */,
+				F21717281A485C48006C9984 /* DispatchQueueLogFormatter.m in Sources */,
+				F217171C1A485C48006C9984 /* DDAbstractDatabaseLogger.m in Sources */,
+				F21717241A485C48006C9984 /* DDTTYLogger.m in Sources */,
+				F21717201A485C48006C9984 /* DDFileLogger.m in Sources */,
+				F21717261A485C48006C9984 /* ContextFilterLogFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +539,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/aono_taketoshi/github/PhilipsHueSDK-iOS-OSX/QuickStartApp_iOS",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhillipsHueController/PhillipsHueController-Prefix.pch";
@@ -505,6 +557,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/aono_taketoshi/github/PhilipsHueSDK-iOS-OSX/QuickStartApp_iOS",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhillipsHueController/PhillipsHueController-Prefix.pch";
@@ -522,6 +575,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhillipsHueController/PhillipsHueController-Prefix.pch";
@@ -544,6 +598,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhillipsHueController/PhillipsHueController-Prefix.pch";
@@ -573,6 +628,7 @@
 				421531F21A43C9D400C4297D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		421531F31A43C9D400C4297D /* Build configuration list for PBXNativeTarget "PhillipsHueControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +637,7 @@
 				421531F51A43C9D400C4297D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

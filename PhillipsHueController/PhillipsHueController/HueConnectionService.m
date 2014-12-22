@@ -17,19 +17,16 @@
 }
 
 // Search brigdges of the Phillips Hue.
-// If bridges found, call successHandler, otherwise do nothing.
-// So to catch connection failure, use PHNotificationManager.
-- (void) searchBridge:(void (^)(NSDictionary* bridgesFound))successHandler {
+// If bridges found, call successHandler, otherwise call failedHandler.
+- (void) searchBridge:(void (^)(NSDictionary* bridgesFound))successHandler failedHandler:(void (^)())failed {
   PHBridgeSearching *bridgeSearch = [[PHBridgeSearching alloc] initWithUpnpSearch:YES andPortalSearch:YES andIpAdressSearch:YES];
   [bridgeSearch startSearchWithCompletionHandler:^(NSDictionary *bridgesFound) {
 
       if (bridgesFound.count > 0) {
         successHandler(bridgesFound);
+      } else {
+          failed();
       }
-
-      // If bridges not found, do nothing here,
-      // to catch connection error,
-      // use PHNotificationManager outside of this class.
     }];
 }
 
@@ -39,5 +36,4 @@
   [self.phHueSdk startPushlinkAuthentication];
 }
 
--(void) 
 @end

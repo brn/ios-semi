@@ -12,6 +12,9 @@
 @interface HueNotificationService : NSObject
 @property(strong, nonatomic) PHNotificationManager* phNotificationManager;
 - (id) init;
-- (void) register:(id)target selector:(SEL)selector forNotification:(NSString*)notif;
-- (void) deregisterAll:(id)target;
+- (void)register:(id)target selector:(SEL)selector forNotification:(NSString*)notif;
+- (void)noLocalConnection:(id)target selector:(SEL)sel;
+- (void)localConnection:(id)target selector:(SEL)sel;
+- (void)noAuthentification:(id)target selector:(SEL)sel;
+- (void)deregisterAll:(id)target;
 @end

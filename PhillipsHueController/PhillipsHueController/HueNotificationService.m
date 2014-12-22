@@ -19,6 +19,18 @@
   [self.phNotificationManager registerObject:target withSelector:selector forNotification:forNotif];
 }
 
+- (void)noLocalConnection:(id)target selector:(SEL)sel {
+    [self register:target selector:sel forNotification:NO_LOCAL_CONNECTION_NOTIFICATION];
+}
+
+- (void)localConnection:(id)target selector:(SEL)sel {
+    [self register:target selector:sel forNotification:LOCAL_CONNECTION_NOTIFICATION];
+}
+
+- (void)noAuthentification:(id)target selector:(SEL)sel {
+    [self register:target selector:sel forNotification:NO_LOCAL_AUTHENTICATION_NOTIFICATION];
+}
+
 - (void) deregisterAll:(id)target {
   [self.phNotificationManager deregisterObjectForAllNotifications:self];
 }
