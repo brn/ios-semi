@@ -12,9 +12,11 @@
 #import "ConnectionListTableViewController.h"
 
 static NSString* const kNoConnectionMessage = @"Connection not found.";
-static NSString* const kNoAuthentificationMessage = @"Authentification failed, check hue configuration.";
+static NSString* const kNoAuthentificationMessage = @"Authentification failed.";
 static NSString* const kNoLocalBridgeKnownMessage = @"Bridges not found.";
 static NSString* const kAuthentificationFailedMessage = @"Push link authentification failed.";
+static NSString* const kButtonNotPressedMessage = @"Pushlink button is not pressed, try again.";
+static const int kMaxHue = 65535;
 
 @interface MainViewController ()
 @property(weak, nonatomic) HueHeartbeatService* hueHeartbeatService;
@@ -49,6 +51,7 @@ static NSString* const kAuthentificationFailedMessage = @"Push link authentifica
         [self.hueNotificationService pushLinkLocalAuthentificationFailed:self selector:@selector(authentificationFailed)];
         [self.hueNotificationService pushLinkNoLocalBridge:self selector:@selector(noLocalBridgeKnown)];
         [self.hueNotificationService pushLinkNoLocalConnection:self selector:@selector(noLocalConnection)];
+        [self.hueNotificationService pushLinkButtonNotPressed:self selector:@selector(buttonNotPressed)];
     }
     return self;
 }
@@ -105,6 +108,16 @@ static NSString* const kAuthentificationFailedMessage = @"Push link authentifica
     }];
 }
 
+- (void)buttonNotPressed {
+    [self showLoading:^{
+        [self.loadingView showAlert:kButtonNotPressedMessage];
+    }];
+}
+
+- (void)authentificationSuccess {
+    [self.loadingView hide];
+}
+
 - (void)connect:(BOOL)useCache {
     [self.hueHeartbeatService start:^{
         [self showLoading:nil];
@@ -141,4 +154,27 @@ static NSString* const kAuthentificationFailedMessage = @"Push link authentifica
 }
 */
 
+- (IBAction)randomize:(id)sender {
+    PHBridgeResourcesCache *cache = [PHBridgeResourcesReader readBridgeResourcesCache];
+    PHBridgeSendAPI *bridgeSendApi = [[PHBridgeSendAPI alloc] init];
+    
+    if ([cache.lights.allValues count] == 0) {
+        [self noLocalConnection];
+        return;
+    }
+    
+    for (PHLight *light in cache.lights.allValues) {
+        PHLightState *lightState = [[PHLightState alloc] init];
+        [lightState setHue:[NSNumber numberWithInt:arc4random() % kMaxHue]];
+        [lightState setBrightness:[NSNumber numberWithInt:254]];
+        [lightState setSaturation:[NSNumber numberWithInt:254]];
+        
+        [bridgeSendApi updateLightStateForId:light.identifier withLightState:lightState completionHandler:^(NSArray *errors) {
+            if (errors != nil) {
+                NSString *message = [NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"Errors", @""), errors != nil? errors: NSLocalizedString(@"none", @"")];
+                NSLog(@"Response: %@", message);
+            }
+        }];
+    }
+}
 @end

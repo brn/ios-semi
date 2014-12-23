@@ -12,4 +12,6 @@
 #import "LoadingViewController.h"
 
 @interface MainViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *randomizeButton;
+- (IBAction)randomize:(id)sender;
 @end
