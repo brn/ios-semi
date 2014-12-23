@@ -50,6 +50,10 @@
 		F217172E1A4866B4006C9984 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F217172B1A4866B4006C9984 /* MainViewController.m */; };
 		F217172F1A4866B4006C9984 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F217172C1A4866B4006C9984 /* MainViewController.xib */; };
 		F21717301A4866B4006C9984 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F217172C1A4866B4006C9984 /* MainViewController.xib */; };
+		F21717341A49A73C006C9984 /* ConnectionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717321A49A73C006C9984 /* ConnectionListTableViewController.m */; };
+		F21717351A49A73C006C9984 /* ConnectionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717321A49A73C006C9984 /* ConnectionListTableViewController.m */; };
+		F21717361A49A73C006C9984 /* ConnectionListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21717331A49A73C006C9984 /* ConnectionListTableViewController.xib */; };
+		F21717371A49A73C006C9984 /* ConnectionListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21717331A49A73C006C9984 /* ConnectionListTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +116,9 @@
 		F217172A1A4866B4006C9984 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F217172B1A4866B4006C9984 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F217172C1A4866B4006C9984 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		F21717311A49A73C006C9984 /* ConnectionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionListTableViewController.h; sourceTree = "<group>"; };
+		F21717321A49A73C006C9984 /* ConnectionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionListTableViewController.m; sourceTree = "<group>"; };
+		F21717331A49A73C006C9984 /* ConnectionListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectionListTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +277,9 @@
 				F21717061A485A88006C9984 /* LoadingViewController.xib */,
 				F217172A1A4866B4006C9984 /* MainViewController.h */,
 				F217172B1A4866B4006C9984 /* MainViewController.m */,
+				F21717311A49A73C006C9984 /* ConnectionListTableViewController.h */,
+				F21717321A49A73C006C9984 /* ConnectionListTableViewController.m */,
+				F21717331A49A73C006C9984 /* ConnectionListTableViewController.xib */,
 				F217172C1A4866B4006C9984 /* MainViewController.xib */,
 			);
 			name = ViewController;
@@ -356,6 +366,7 @@
 				421531DA1A43C9D400C4297D /* Images.xcassets in Resources */,
 				421531D21A43C9D400C4297D /* Main_iPhone.storyboard in Resources */,
 				F21717091A485A88006C9984 /* LoadingViewController.xib in Resources */,
+				F21717361A49A73C006C9984 /* ConnectionListTableViewController.xib in Resources */,
 				421531C91A43C9D400C4297D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				421531EB1A43C9D400C4297D /* InfoPlist.strings in Resources */,
+				F21717371A49A73C006C9984 /* ConnectionListTableViewController.xib in Resources */,
 				F21717301A4866B4006C9984 /* MainViewController.xib in Resources */,
 				F217170A1A485A88006C9984 /* LoadingViewController.xib in Resources */,
 			);
@@ -392,6 +404,7 @@
 				F217171B1A485C48006C9984 /* DDAbstractDatabaseLogger.m in Sources */,
 				4215321B1A43D60C00C4297D /* HueHeartbeatService.m in Sources */,
 				421532181A43D2AB00C4297D /* HueNotificationService.m in Sources */,
+				F21717341A49A73C006C9984 /* ConnectionListTableViewController.m in Sources */,
 				421531CB1A43C9D400C4297D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +422,7 @@
 				F217171C1A485C48006C9984 /* DDAbstractDatabaseLogger.m in Sources */,
 				F21717241A485C48006C9984 /* DDTTYLogger.m in Sources */,
 				F21717201A485C48006C9984 /* DDFileLogger.m in Sources */,
+				F21717351A49A73C006C9984 /* ConnectionListTableViewController.m in Sources */,
 				F21717261A485C48006C9984 /* ContextFilterLogFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,6 +558,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhillipsHueController/PhillipsHueController-Prefix.pch";
 				INFOPLIST_FILE = "PhillipsHueController/PhillipsHueController-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -562,6 +577,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhillipsHueController/PhillipsHueController-Prefix.pch";
 				INFOPLIST_FILE = "PhillipsHueController/PhillipsHueController-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

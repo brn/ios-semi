@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "HueHeartbeatService.h"
 #import "HueNotificationService.h"
+#import "LoadingViewController.h"
 
 #define APP_DELEGATE (AppDelegate*)[[UIApplication sharedApplication] delegate];
 

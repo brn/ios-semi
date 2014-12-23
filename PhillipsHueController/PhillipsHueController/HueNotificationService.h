@@ -16,5 +16,11 @@
 - (void)noLocalConnection:(id)target selector:(SEL)sel;
 - (void)localConnection:(id)target selector:(SEL)sel;
 - (void)noAuthentification:(id)target selector:(SEL)sel;
+- (void)noLocalBridgeKnown:(id)target selector:(SEL)sel;
+- (void)pushLinkLocalAuthentificationSuccess:(id)target selector:(SEL)sel;
+- (void)pushLinkLocalAuthentificationFailed:(id)target selector:(SEL)sel;
+- (void)pushLinkNoLocalConnection:(id)target selector:(SEL)sel;
+- (void)pushLinkNoLocalBridge:(id)target selector:(SEL)sel;
+- (void)pushLinkButtonNotPressed:(id)target selector:(SEL)sel;
 - (void)deregisterAll:(id)target;
 @end

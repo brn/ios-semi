@@ -12,7 +12,4 @@
 #import "LoadingViewController.h"
 
 @interface MainViewController : UIViewController
-@property(weak, nonatomic) HueHeartbeatService* hueHeartbeatService;
-@property(weak, nonatomic) HueNotificationService* hueNotificationService;
-@property(strong, nonatomic) LoadingViewController* loadingView;
 @end

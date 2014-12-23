@@ -17,9 +17,9 @@
     return ret;
 }
 
-- (void) start:(void (^)())beforeSearchBridge successHandler:(void (^)(NSDictionary* bridgesFound))successHandler failedHandler:(void (^)())failed {
+- (void) start:(void (^)())beforeSearchBridge successHandler:(void (^)(NSDictionary* bridgesFound))successHandler failedHandler:(void (^)())failed useCache:(BOOL)useCache {
     PHBridgeResourcesCache *cache = [PHBridgeResourcesReader readBridgeResourcesCache];
-    if (cache != nil && cache.bridgeConfiguration != nil && cache.bridgeConfiguration.ipaddress != nil) {
+    if (useCache && cache != nil && cache.bridgeConfiguration != nil && cache.bridgeConfiguration.ipaddress != nil) {
         //
         //[self showLoadingViewWithText:NSLocalizedString(@"Connecting...", @"Connecting text")];
         
@@ -31,5 +31,9 @@
         beforeSearchBridge();
         [self.hueConnectionService searchBridge:successHandler failedHandler:failed];
     }
+}
+
+-(void) stop{
+    [self.phHueSdk disableLocalConnection];
 }
 @end

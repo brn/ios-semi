@@ -13,4 +13,5 @@
 @property(strong, nonatomic) PHHueSDK* phHueSdk;
 - (id) init:(PHHueSDK*)phHueSdk;
 - (void) searchBridge:(void (^)(NSDictionary* bridgesFound))successHandler failedHandler:(void (^)())failed;
+- (void) connectToSpecificIpAndMacAddr:(NSString*)ipAddress macAddress:(NSString*)macAddress;
 @end

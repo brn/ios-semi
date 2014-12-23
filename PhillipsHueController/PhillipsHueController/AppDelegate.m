@@ -12,20 +12,23 @@
 @implementation AppDelegate
 
 - (id) init {
-    id ret = [super init];
-    self.phHueSdk = [[PHHueSDK alloc] init];
-    [self.phHueSdk enableLogging:YES];
-    [self.phHueSdk startUpSDK];
-    self.hueConnectionService = [[HueConnectionService alloc] init:self.phHueSdk];
-    self.hueHeartbeatService = [[HueHeartbeatService alloc] init:self.phHueSdk hueConnectionService:self.hueConnectionService];
-    self.hueNotificationService = [[HueNotificationService alloc] init];
-    return ret;
+    self = [super init];
+    if (self) {
+        self.phHueSdk = [[PHHueSDK alloc] init];
+        [self.phHueSdk enableLogging:YES];
+        self.hueConnectionService = [[HueConnectionService alloc] init:self.phHueSdk];
+        self.hueHeartbeatService = [[HueHeartbeatService alloc] init:self.phHueSdk hueConnectionService:self.hueConnectionService];
+        self.hueNotificationService = [[HueNotificationService alloc] init];
+    }
+    return self;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     UIViewController* viewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:viewController];
     self.window.rootViewController = viewController;
+    [self.window addSubview:nav.view];
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;

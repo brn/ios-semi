@@ -6,19 +6,21 @@
 //  Copyright (c) 2014年 青野 健利. All rights reserved.
 //
 
+#import <HueSDK_iOS/HueSDK.h>
 #import "LoadingViewController.h"
 
 @interface LoadingViewController ()
-
+@property(strong, nonatomic) void (^findNewConHandler)();
 @end
 
 @implementation LoadingViewController
 
-- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil retryHandler:(void (^)())retryHandler cacelHandler:(void (^)())cancel {
+- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil retryHandler:(void (^)())retryHandler cacelHandler:(void (^)())cancel findNewConHandler:(void(^)())findNewConHandler {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.retryHandler = retryHandler;
         self.cancelHandler = cancel;
+        self.findNewConHandler = findNewConHandler;
         self.shown = NO;
         self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     }
@@ -63,12 +65,17 @@
     self.cancelHandler();
 }
 
+- (void)onNewConnection:(id)sender {
+    [self changeStateToLoading];
+    self.findNewConHandler();
+}
+
 - (void)hide {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)showAlert {
-    [self changeStateToAlert];
+- (void)showAlert:(NSString*)message {
+    [self changeStateToAlert:message];
 }
 
 - (void)changeStateToLoading {
@@ -76,15 +83,17 @@
     self.alertLabel.hidden = NO;
     self.retryButton.hidden = YES;
     self.cancelButton.hidden = YES;
+    self.findNewConnectionButton.hidden = YES;
     self.alertLabel.text = @"Now connecting...";
 }
 
-- (void)changeStateToAlert {
+- (void)changeStateToAlert:(const NSString*)message {
     self.indicator.hidden = YES;
     self.alertLabel.hidden = NO;
     self.retryButton.hidden = NO;
     self.cancelButton.hidden = NO;
-    self.alertLabel.text = @"Connection not found.";
+    self.findNewConnectionButton.hidden = NO;
+    self.alertLabel.text = message;
 }
 
 /*

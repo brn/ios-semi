@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="alertLabel" destination="cXQ-8g-AZC" id="g0V-tf-tge"/>
                 <outlet property="cancelButton" destination="IK2-Df-O67" id="lHZ-IM-nGH"/>
+                <outlet property="findNewConnectionButton" destination="hx7-av-GsN" id="wo1-lG-SeS"/>
                 <outlet property="indicator" destination="tek-cF-DBr" id="2le-g0-Bsi"/>
                 <outlet property="retryButton" destination="kbD-DV-cl4" id="1Kz-C0-U5g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -29,7 +30,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbD-DV-cl4">
-                    <rect key="frame" x="232" y="322" width="46" height="30"/>
+                    <rect key="frame" x="277" y="295" width="46" height="30"/>
                     <state key="normal" title="Retry">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -39,7 +40,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK2-Df-O67">
-                    <rect key="frame" x="322" y="322" width="59" height="30"/>
+                    <rect key="frame" x="271" y="320" width="59" height="30"/>
                     <state key="normal" title="Cancel">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,17 +49,29 @@
                         <action selector="onCancel:" destination="-1" eventType="touchUpInside" id="heb-wE-pVV"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hx7-av-GsN">
+                    <rect key="frame" x="201" y="349" width="199" height="30"/>
+                    <state key="normal" title="Find new connection">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNewConnection:" destination="-1" eventType="touchUpInside" id="GBC-Mc-RVn"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="centerX" secondItem="IK2-Df-O67" secondAttribute="centerX" id="1GL-fx-e4g"/>
                 <constraint firstAttribute="centerY" secondItem="cXQ-8g-AZC" secondAttribute="centerY" constant="32.5" id="1gg-47-j92"/>
                 <constraint firstAttribute="centerY" secondItem="cXQ-8g-AZC" secondAttribute="centerY" id="2ou-xF-Qyt"/>
                 <constraint firstAttribute="centerX" secondItem="cXQ-8g-AZC" secondAttribute="centerX" id="5Q6-hw-Qum"/>
-                <constraint firstAttribute="centerY" secondItem="IK2-Df-O67" secondAttribute="centerY" constant="-37" id="9fu-oR-Wjo"/>
+                <constraint firstAttribute="centerX" secondItem="hx7-av-GsN" secondAttribute="centerX" id="Fgk-Y8-4Rp"/>
+                <constraint firstAttribute="centerX" secondItem="kbD-DV-cl4" secondAttribute="centerX" id="IF6-t4-RCt"/>
+                <constraint firstAttribute="centerY" secondItem="IK2-Df-O67" secondAttribute="centerY" constant="-35" id="Ldc-bK-WSZ"/>
                 <constraint firstAttribute="centerY" secondItem="tek-cF-DBr" secondAttribute="centerY" id="OWh-n9-hpX"/>
-                <constraint firstAttribute="centerX" secondItem="IK2-Df-O67" secondAttribute="centerX" constant="-51.5" id="kPt-bv-vza"/>
-                <constraint firstAttribute="centerX" secondItem="kbD-DV-cl4" secondAttribute="centerX" constant="45" id="lUz-bk-eJg"/>
-                <constraint firstAttribute="centerY" secondItem="kbD-DV-cl4" secondAttribute="centerY" constant="-37" id="qqO-bX-uMF"/>
+                <constraint firstAttribute="centerY" secondItem="hx7-av-GsN" secondAttribute="centerY" constant="-64" id="fzI-Dh-Blb"/>
+                <constraint firstAttribute="centerY" secondItem="kbD-DV-cl4" secondAttribute="centerY" constant="-10" id="qv9-0S-LwL"/>
                 <constraint firstAttribute="centerX" secondItem="tek-cF-DBr" secondAttribute="centerX" id="yH7-8m-4Ha"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

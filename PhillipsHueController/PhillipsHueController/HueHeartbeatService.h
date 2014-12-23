@@ -14,5 +14,6 @@
 @property(weak, nonatomic) PHHueSDK* phHueSdk;
 @property(weak, nonatomic) HueConnectionService* hueConnectionService;
 - (id) init:(PHHueSDK*) phHueSdk hueConnectionService:(HueConnectionService*) hueConService;
-- (void) start:(void (^)())beforeSearchBridge successHandler:(void (^)(NSDictionary* bridgesFound))successHandler failedHandler:(void (^)())failed;
+- (void) start:(void (^)())beforeSearchBridge successHandler:(void (^)(NSDictionary* bridgesFound))successHandler failedHandler:(void (^)())failed useCache:(BOOL)useCache;
+- (void) stop;
 @end
