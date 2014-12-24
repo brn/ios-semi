@@ -12,6 +12,9 @@
 #import "LoadingViewController.h"
 
 #define APP_DELEGATE (AppDelegate*)[[UIApplication sharedApplication] delegate];
+#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] \
+compare:v options:NSNumericSearch] == NSOrderedAscending)
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

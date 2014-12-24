@@ -22,5 +22,6 @@
 - (void)pushLinkNoLocalConnection:(id)target selector:(SEL)sel;
 - (void)pushLinkNoLocalBridge:(id)target selector:(SEL)sel;
 - (void)pushLinkButtonNotPressed:(id)target selector:(SEL)sel;
+- (void)deregister:(id)target forNotification:(NSString*)notif;
 - (void)deregisterAll:(id)target;
 @end

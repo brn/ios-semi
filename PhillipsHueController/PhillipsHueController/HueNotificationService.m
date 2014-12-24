@@ -20,39 +20,43 @@
 }
 
 - (void)noLocalConnection:(id)target selector:(SEL)sel {
-    [self register:target selector:sel forNotification:NO_LOCAL_CONNECTION_NOTIFICATION];
+  [self register:target selector:sel forNotification:NO_LOCAL_CONNECTION_NOTIFICATION];
 }
 
 - (void)localConnection:(id)target selector:(SEL)sel {
-    [self register:target selector:sel forNotification:LOCAL_CONNECTION_NOTIFICATION];
+  [self register:target selector:sel forNotification:LOCAL_CONNECTION_NOTIFICATION];
 }
 
 - (void)noAuthentification:(id)target selector:(SEL)sel {
-    [self register:target selector:sel forNotification:NO_LOCAL_AUTHENTICATION_NOTIFICATION];
+  [self register:target selector:sel forNotification:NO_LOCAL_AUTHENTICATION_NOTIFICATION];
 }
 
 - (void)noLocalBridgeKnown:(id)target selector:(SEL)sel {
-    [self register:target selector:sel forNotification:NO_LOCAL_BRIDGE_KNOWN_NOTIFICATION];
+  [self register:target selector:sel forNotification:NO_LOCAL_BRIDGE_KNOWN_NOTIFICATION];
 }
 
 - (void)pushLinkLocalAuthentificationSuccess:(id)target selector:(SEL)sel {
-    [self register:target selector:sel forNotification:PUSHLINK_LOCAL_AUTHENTICATION_SUCCESS_NOTIFICATION];
+  [self register:target selector:sel forNotification:PUSHLINK_LOCAL_AUTHENTICATION_SUCCESS_NOTIFICATION];
 }
 
 - (void)pushLinkLocalAuthentificationFailed:(id)target selector:(SEL)sel {
-    [self register:target selector:sel forNotification:PUSHLINK_LOCAL_AUTHENTICATION_FAILED_NOTIFICATION];
+  [self register:target selector:sel forNotification:PUSHLINK_LOCAL_AUTHENTICATION_FAILED_NOTIFICATION];
 }
 
 - (void)pushLinkNoLocalConnection:(id)target selector:(SEL)sel {
-    [self register:target selector:sel forNotification:PUSHLINK_NO_LOCAL_CONNECTION_NOTIFICATION];
+  [self register:target selector:sel forNotification:PUSHLINK_NO_LOCAL_CONNECTION_NOTIFICATION];
 }
 
 - (void)pushLinkNoLocalBridge:(id)target selector:(SEL)sel {
-    [self register:target selector:sel forNotification:PUSHLINK_NO_LOCAL_BRIDGE_KNOWN_NOTIFICATION];
+  [self register:target selector:sel forNotification:PUSHLINK_NO_LOCAL_BRIDGE_KNOWN_NOTIFICATION];
 }
 
 - (void)pushLinkButtonNotPressed:(id)target selector:(SEL)sel {
-    [self register:target selector:sel forNotification:PUSHLINK_BUTTON_NOT_PRESSED_NOTIFICATION];
+  [self register:target selector:sel forNotification:PUSHLINK_BUTTON_NOT_PRESSED_NOTIFICATION];
+}
+
+- (void)deregister:(id)target forNotification:(NSString*)notif {
+  [self.phNotificationManager deregisterObject:target forNotification:notif];
 }
 
 - (void) deregisterAll:(id)target {

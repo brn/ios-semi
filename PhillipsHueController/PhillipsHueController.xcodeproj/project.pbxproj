@@ -26,6 +26,9 @@
 		421532151A43CCBB00C4297D /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 421532141A43CCBB00C4297D /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		421532181A43D2AB00C4297D /* HueNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 421532171A43D2AB00C4297D /* HueNotificationService.m */; };
 		4215321B1A43D60C00C4297D /* HueHeartbeatService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4215321A1A43D60C00C4297D /* HueHeartbeatService.m */; };
+		427C3A131A4AA93A00E9B108 /* PushlinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427C3A111A4AA93A00E9B108 /* PushlinkViewController.m */; };
+		427C3A141A4AA93A00E9B108 /* PushlinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427C3A121A4AA93A00E9B108 /* PushlinkViewController.xib */; };
+		427C3A161A4AA97B00E9B108 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 427C3A151A4AA97B00E9B108 /* images.png */; };
 		F21717021A485533006C9984 /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21717011A485533006C9984 /* HueSDK_iOS.framework */; };
 		F21717031A485533006C9984 /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21717011A485533006C9984 /* HueSDK_iOS.framework */; };
 		F21717071A485A88006C9984 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21717051A485A88006C9984 /* LoadingViewController.m */; };
@@ -95,6 +98,10 @@
 		421532171A43D2AB00C4297D /* HueNotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HueNotificationService.m; sourceTree = "<group>"; };
 		421532191A43D60C00C4297D /* HueHeartbeatService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HueHeartbeatService.h; sourceTree = "<group>"; };
 		4215321A1A43D60C00C4297D /* HueHeartbeatService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HueHeartbeatService.m; sourceTree = "<group>"; };
+		427C3A101A4AA93A00E9B108 /* PushlinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushlinkViewController.h; sourceTree = "<group>"; };
+		427C3A111A4AA93A00E9B108 /* PushlinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushlinkViewController.m; sourceTree = "<group>"; };
+		427C3A121A4AA93A00E9B108 /* PushlinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushlinkViewController.xib; sourceTree = "<group>"; };
+		427C3A151A4AA97B00E9B108 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
 		F21717011A485533006C9984 /* HueSDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK_iOS.framework; sourceTree = "<group>"; };
 		F21717041A485A88006C9984 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		F21717051A485A88006C9984 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
@@ -182,6 +189,7 @@
 		421531C41A43C9D400C4297D /* PhillipsHueController */ = {
 			isa = PBXGroup;
 			children = (
+				427C3A171A4AA98700E9B108 /* Resources */,
 				F21717291A486681006C9984 /* ViewController */,
 				421532131A43CCBB00C4297D /* JSONKit.h */,
 				421532141A43CCBB00C4297D /* JSONKit.m */,
@@ -240,6 +248,14 @@
 			name = Service;
 			sourceTree = "<group>";
 		};
+		427C3A171A4AA98700E9B108 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				427C3A151A4AA97B00E9B108 /* images.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F217170B1A485C48006C9984 /* Lumberjack */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +289,9 @@
 			isa = PBXGroup;
 			children = (
 				F21717041A485A88006C9984 /* LoadingViewController.h */,
+				427C3A101A4AA93A00E9B108 /* PushlinkViewController.h */,
+				427C3A111A4AA93A00E9B108 /* PushlinkViewController.m */,
+				427C3A121A4AA93A00E9B108 /* PushlinkViewController.xib */,
 				F21717051A485A88006C9984 /* LoadingViewController.m */,
 				F21717061A485A88006C9984 /* LoadingViewController.xib */,
 				F217172A1A4866B4006C9984 /* MainViewController.h */,
@@ -361,6 +380,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427C3A161A4AA97B00E9B108 /* images.png in Resources */,
+				427C3A141A4AA93A00E9B108 /* PushlinkViewController.xib in Resources */,
 				421531D51A43C9D400C4297D /* Main_iPad.storyboard in Resources */,
 				F217172F1A4866B4006C9984 /* MainViewController.xib in Resources */,
 				421531DA1A43C9D400C4297D /* Images.xcassets in Resources */,
@@ -389,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427C3A131A4AA93A00E9B108 /* PushlinkViewController.m in Sources */,
 				F21717211A485C48006C9984 /* DDLog.m in Sources */,
 				F21717251A485C48006C9984 /* ContextFilterLogFormatter.m in Sources */,
 				421531F91A43CA3300C4297D /* HueConnectionService.m in Sources */,
@@ -558,6 +580,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhillipsHueController/PhillipsHueController-Prefix.pch";
 				INFOPLIST_FILE = "PhillipsHueController/PhillipsHueController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -577,6 +600,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhillipsHueController/PhillipsHueController-Prefix.pch";
 				INFOPLIST_FILE = "PhillipsHueController/PhillipsHueController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

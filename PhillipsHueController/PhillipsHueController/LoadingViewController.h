@@ -24,5 +24,5 @@
 - (IBAction)onNewConnection:(id)sender;
 
 - (void)hide;
-- (void)showAlert:(const NSString*)message;
+- (void)showAlert:(NSString*)message;
 @end

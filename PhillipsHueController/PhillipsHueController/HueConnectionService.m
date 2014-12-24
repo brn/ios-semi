@@ -25,7 +25,7 @@
       if (bridgesFound.count > 0) {
         successHandler(bridgesFound);
       } else {
-          failed();
+        failed();
       }
     }];
 }
